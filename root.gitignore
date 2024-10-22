@@ -1,54 +1,71 @@
-# Frontend
-projectno1_frontend/node_modules
-projectno1_frontend/build
-projectno1_frontend/dist
-projectno1_frontend/dist-ssr
-projectno1_frontend/*.local
+# Frontend specific
+projectno1_frontend/node_modules/
 projectno1_frontend/.env
 projectno1_frontend/.env.*
 !projectno1_frontend/.env.example
+projectno1_frontend/dist/
+projectno1_frontend/dist-ssr/
+projectno1_frontend/build/
+projectno1_frontend/coverage/
+projectno1_frontend/*.local
+projectno1_frontend/.vite/
 
-# Server
-server/node_modules
+# Server specific
+server/node_modules/
 server/.env
 server/.env.*
 !server/.env.example
+server/coverage/
+server/dist/
+server/build/
 
-# Python App
-app/__pycache__
-app/**/*.py[cod]
-app/**/*$py.class
-app/venv
-app/env
+# Python app specific
+app/__pycache__/
+app/*.py[cod]
+app/*$py.class
 app/.env
 app/.env.*
 !app/.env.example
+app/venv/
+app/env/
+app/build/
+app/dist/
+app/*.egg-info/
+app/.pytest_cache/
+app/.coverage
 
-# Dependencies
-node_modules
-__pycache__
-*.py[cod]
-
-# Environment
+# General ignores
+node_modules/
+__pycache__/
+*.pyc
 .env
-.env.*
-!.env.example
-venv
-env
+venv/
+env/
+.coverage
+coverage/
+dist/
+build/
 
-# Editor/IDE
+# IDE/Editor
 .vscode/*
 !.vscode/extensions.json
-.idea
+.idea/
 *.swp
 *.swo
 
-# OS
+# OS generated
 .DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
 Thumbs.db
 
 # Logs
+logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
