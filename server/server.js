@@ -9,7 +9,7 @@ require('dotenv').config()
 app.use(bodyparser.json());
 
 app.use(cors({
-  origin: 'http://localhost:5173', 
+  origin: 'https://stockgro.onrender.com', 
   credentials: true,
   allowedHeaders: ['Content-Type', 'Authorization'],
 }));
